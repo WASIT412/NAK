@@ -1,0 +1,13 @@
+<section [formGroup]="group">
+  <mat-form-field>
+      <mat-select #dropdownList [placeholder]="label"  [formControlName]="controlname" [required]="required" (selectionChange)="onItemSelect($event)" [multiple]="multipleSelect" >
+        <mat-option>--Select--</mat-option>
+        <mat-option *ngFor="let option of dataSource" [value]="option[valueField]">
+         {{option[textField]}}
+        </mat-option>
+      </mat-select>
+       <!-- <mat-error *ngIf="controlname.hasError('required')">Please choose an option</mat-error>  -->
+      <!-- <mat-hint>{{animalControl.value?.sound}}</mat-hint> -->
+    </mat-form-field>
+  </section>
+  

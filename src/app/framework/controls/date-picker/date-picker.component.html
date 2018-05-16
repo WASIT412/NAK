@@ -1,0 +1,7 @@
+<section  [formGroup]="group">
+<mat-form-field>
+    <input matInput [formControlName]="controlname" [matDatepicker]="dp3" [placeholder]="label">
+    <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+    <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+  </mat-form-field>
+</section>

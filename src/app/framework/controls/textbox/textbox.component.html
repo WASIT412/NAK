@@ -1,0 +1,14 @@
+ <div [formGroup]="group"> 
+    <mat-form-field>
+      <input matInput [placeholder]="getLabel()" [type]="type" [formControlName]="controlname">
+      <button *ngIf="showClearButton" mat-button  matSuffix mat-icon-button aria-label="Clear" (click)="clear()" (keydown)="clearKeyDownFunction($event)">
+          <mat-icon>close</mat-icon>
+        </button>
+      <mat-error *ngIf="control.hasError('email') && !control.hasError('required')">
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="control.hasError('required')">
+        {{label}} is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+ </div> 
