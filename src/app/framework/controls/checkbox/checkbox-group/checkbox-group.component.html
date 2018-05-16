@@ -1,0 +1,7 @@
+  <section [formGroup]="group">
+      <label class="e-label">{{label}}</label>
+      <div [ngClass]="{'row': rowDisplay }">
+    <cyberintechCheckbox class="px-3" *ngFor="let checkboxOption of options" [group]="group" isGrouped="true" [controlname]="checkboxOption.controlName" [label]="checkboxOption.label" [labelPosition]="labelPosition" ></cyberintechCheckbox>
+      </div>
+    </section>
+
