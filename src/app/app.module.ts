@@ -6,6 +6,9 @@ import { HomeComponent } from './home/home.component';
 import { HotelComponent } from './hotel/hotel.component';
 import { CyberintechControlsModule } from './framework/controls/controls.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HeaderComponent } from './framework/common/header/header.component';
+import { FooterComponent } from './framework/common/footer/footer.component';
+import { AppRoutingModule } from './app.routing';
 
 
 
@@ -13,13 +16,16 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     HomeComponent,
-    HotelComponent
+    HotelComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     CyberintechControlsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
