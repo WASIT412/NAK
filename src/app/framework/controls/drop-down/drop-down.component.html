@@ -6,7 +6,7 @@
          {{option[textField]}}
         </mat-option>
       </mat-select>
-       <!-- <mat-error *ngIf="controlname.hasError('required')">Please choose an option</mat-error>  -->
+      <mat-error *ngIf="control.hasError('required')">Please {{label}}</mat-error> 
       <!-- <mat-hint>{{animalControl.value?.sound}}</mat-hint> -->
     </mat-form-field>
   </section>

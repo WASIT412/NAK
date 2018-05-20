@@ -1,15 +1,15 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {  HomeComponent } from './home/home.component';
-import {  HeaderComponent } from './framework/common/header/header.component';
-import {  FooterComponent } from './framework/common/footer/footer.component';
+import {  HotelComponent } from './hotel/hotel.component';
+
 const routes: Routes = [
- // {path: 'ledger', loadChildren: './ledger/ledger.module#LedgerModule',
-// data: {breadcrumb: 'Ledger', title: 'Ledger', nav: true, auth: true}}
+  
 { path: '', component:HomeComponent, data: 
 {breadcrumb: 'Home', title: 'Dashboard', nav: true, auth: true}},
-
-//   { path: 'ledger', loadChildren: () => LedgerModule, data: 
+{ path: 'hotel', component: HotelComponent, data: 
+{breadcrumb: 'Home', title: 'Dashboard', nav: true, auth: true}},
+  
 //  {breadcrumb: 'Ledger', title: 'Ledger', nav: true, auth: true}},
 // {
 //   path: 'administration',loadChildren: () => AdministrationModule,
