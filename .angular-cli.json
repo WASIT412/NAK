@@ -19,7 +19,12 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "cyberintech",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "./fonts/font-awesome.min.css",
+        "animate.min.css",
+        "./js/jquery-1.11.1.min.js",
+        "./js/min/plugins-min.js",
+        "./js/min/app-min.js"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

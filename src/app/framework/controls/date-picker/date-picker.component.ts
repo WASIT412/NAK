@@ -9,6 +9,7 @@ import { FormGroup, AbstractControl } from '@angular/forms';
 export class CyberintechDatePickerComponent implements OnInit {
   @Input() public controlname: string;
   @Input() public group: FormGroup;
+  @Input() label: string;
 
   control: AbstractControl;
   constructor() { }

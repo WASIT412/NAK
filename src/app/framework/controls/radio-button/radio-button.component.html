@@ -8,7 +8,7 @@
 <section  [formGroup]="group">
   <mat-radio-group [formControlName]="controlname" [labelPosition]="labelPosition" [required]="required" [selected]="selected" (change)="onChange($event)">
       <mat-radio-button *ngFor="let data of options" [value]="data[value]">
-        {{data[text]}}
+        {{data[text]}}&nbsp;&nbsp;
       </mat-radio-button>
     </mat-radio-group>
   </section>

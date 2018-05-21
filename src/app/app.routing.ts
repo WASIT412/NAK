@@ -5,9 +5,11 @@ import {  HotelComponent } from './hotel/hotel.component';
 
 const routes: Routes = [
   
-{ path: '', component:HomeComponent, data: 
+{ path: 'home', component:HomeComponent, data: 
 {breadcrumb: 'Home', title: 'Dashboard', nav: true, auth: true}},
 { path: 'hotel', component: HotelComponent, data: 
+{breadcrumb: 'Home', title: 'Dashboard', nav: true, auth: true}},
+{ path: '', component:HomeComponent, data: 
 {breadcrumb: 'Home', title: 'Dashboard', nav: true, auth: true}},
   
 //  {breadcrumb: 'Ledger', title: 'Ledger', nav: true, auth: true}},
